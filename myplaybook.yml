@@ -3,3 +3,4 @@
   - name: install GIT on the local server
     yum: name=git state=latest
     become: yes
+    become: yes
