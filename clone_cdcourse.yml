@@ -1,5 +1,7 @@
 - hosts: localhost
   tasks:
-  - name: get pet clinic
-    
-    become: yes
+ - name: clone cdcourse repo
+    git:
+      repo: "https://github.com/alekso73/cdcourse.git"
+      dest: "/home/ec2-user/cdcourse"
+      update: no
