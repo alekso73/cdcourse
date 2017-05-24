@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+  - name: install GIT on the local server
+    yum: name=git state=latest
+    become: yes
